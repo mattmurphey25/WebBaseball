@@ -1,6 +1,6 @@
 .box {
     box-sizing: border-box;
-    color: #14aa96;
+    color: rgb(0, 0, 100);
     background: #fff;
     padding: 40px;
     margin-top: 20px;
@@ -11,7 +11,7 @@
 }
 
 .background {
-    background: #f1f1f1;
+    background: #cfcfcf;
 }
 
 .navbar {
@@ -33,6 +33,7 @@ table {
 }
 
 p {
+    font-family: "Times New Roman", Times, serif;
     color: black;
 }
 
@@ -53,7 +54,7 @@ h3 {
 
 #latitude-brand {
     font-family: "Times New Roman", Times, serif;
-    background-color: #14aa96;
+    background-color: rgb(0, 0, 100);
     color: white;
     font-size: 20px;
 }
@@ -72,6 +73,13 @@ h3 {
     width: 620px;
 }
 
+.centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
 @media (min-width: 992px) {
     .container-fluid-1 {
         margin-left: 30px;
@@ -81,7 +89,7 @@ h3 {
 
 @media (max-width: 767px) {
     .navbar-header {
-        background-color: #14aa96;
+        background-color: rgb(0, 0, 100);
     }
 
     .box-1 {

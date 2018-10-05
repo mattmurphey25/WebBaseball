@@ -47,43 +47,84 @@
     </nav>    
     <div class="container-fluid container-fluid-1" class="clearfix">
         <div class="row">
+            
             <div class="col-lg-8 col-sm-12">
                 <div class="box">
-                    <h1><strong>Max Temperature</strong></h1>
+                    <h1><strong>Decision Tree Pipeline</strong></h1>
                     <hr>
-                    <img src="Resources\Latitude_Temperature.png" alt="Temperature Graph" class="center">
+                    <img src="images/pipeline.png" alt="pipeline" class="center">
                     <p class="text">
-                        The overall shape of the plot appears to be a flattened upside-down parabola. I see the graph as two linear clusters joined together. All temperatures under the equator tend to rise linearly around 1°F per °Latitude. All temperatures about 20°N tend to fall linearly at 0.75°F per °Latitude. Between the equator and 20°N, the temperatures are around 40°F lower than they would appear to be following the other data. This can be explained by the placement of rainforests.
+                        This image shows that the data for each factor is normally distributed.  So a pipeline is made for a Decision Tree classification model.
                     </p>
                 </div>
             </div>
-            <div class="col-lg-4 col-sm-12">
+            
+            <div class="col-lg-8 col-sm-12">
                 <div class="box">
-                    <h2><strong>Visualizations</strong></h2>
+                    <h1><strong>Decision Tree Accuracy</strong></h1>
                     <hr>
-                    <div class="row">
-                        <div class="col-lg-6 col-sm-3">
-                            <a href="temperature.html" class="thumbnail">
-                                <img src="Resources\Latitude_Temperature.png" alt="Temperature Graph">
-                            </a>
-                        </div>
-                        <div class="col-lg-6 col-sm-3">
-                            <a href="cloudiness.html" class="thumbnail">
-                                <img src="Resources\Latitude_Cloudiness.png" alt="Cloudiness Graph">
-                            </a>
-                        </div>
-                        <div class="col-lg-6 col-sm-3">
-                            <a href="humidity.html" class="thumbnail">
-                                <img src="Resources\Latitude_Humidity.png" alt="Humidity Graph">
-                            </a>
-                        </div>
-                        <div class="col-lg-6 col-sm-3">
-                            <a href="wind.html" class="thumbnail">
-                                <img src="Resources\Latitude_Wind.png" alt="Wind Graph">
-                            </a>
-                        </div>
-                    </div>
+                    <img src="images/accuracy.png" alt="accuracy" class="center">
+                    <p class="text">
+                        This image shows the accuracy of the train/test split of the data from 2008-2017.  Then, below it displays the code and results of using prediction and score seperately.  The final cell shows the feature importances r squared values.  4 of the top 5 factors are defensive stats.
+                    </p>
+                    <img src="images/baseball_tree.png" alt="graphviz" class="center">
                 </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+                <div class="box">
+                    <h1><strong>Past Prediction Results</strong></h1>
+                    <hr>
+                    <img src="images/past_predictions.png" alt="past" class="center">
+                    <p class="text">
+                        This image shows the results of the decision tree model given the training data at predicting the correct winners of the past 10 world series.  Results show 7 out of 10 are correct.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="col-lg-8 col-sm-12">
+                <div class="box">
+                    <h1><strong>And the Winner Is...</strong></h1>
+                    <hr>
+                    <img src="images/tree_results.png" alt="past" class="center">
+        
+                    <p class="text">
+                        The Decision Tree can't make a decision based on the data because the training data for non-winners is 30 times higher  
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-8 col-sm-12">
+                <div class="box">
+                    <h1><strong>Random Forest Accuracy</strong></h1>
+                    <hr>
+                    <img src="images/forest_accuracy.png" alt="past" class="center">
+                    <p class="text">
+                        This shows that the accuracy of the model is high, at least at predicting the non-winners.  Notice that the feature_importances are different than with the Decision Tree.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+                    <div class="box">
+                        <h1><strong>Random Forest Results</strong></h1>
+                        <hr>
+                        <p class="text">
+                            Predicted winners--- Houston!
+                        </p>
+                        <img src="https://media.giphy.com/media/l1J9BSsgrLzeRET6w/giphy.gif" alt="cleveland" class = "center">
+                        <img src="images/forest_results.png" alt="results" class="center">
+                    </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+                    <div class="box">
+                        <h1><strong>Logistic Regression Results</strong></h1>
+                        <hr>
+                        <img src="images/logistic_results.png" alt="results" class="center">
+                        <p class="text">
+                            The model isnt completely confident on a winner either, but we see the the highest probablity is, CLEVELAND!
+                        </p>
+                        <img src="https://media.giphy.com/media/fIRlp168XuC6Q/giphy.gif" alt="Cleveland celebrate" class="center">
+                        <img src="" alt="cleveland" class = "center">
+                    </div>
             </div>
         </div>
     </div>
